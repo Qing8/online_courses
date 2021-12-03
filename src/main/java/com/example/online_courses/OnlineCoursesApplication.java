@@ -1,0 +1,15 @@
+package com.example.online_courses;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+@MapperScan("com.example.online_courses.mapper")
+public class OnlineCoursesApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(OnlineCoursesApplication.class, args);
+    }
+
+}
