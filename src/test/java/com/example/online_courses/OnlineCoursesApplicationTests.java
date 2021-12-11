@@ -25,9 +25,9 @@ class OnlineCoursesApplicationTests {
     @Test
     void addUser(){
         User user = new User();
-        user.setName("Lucy");
-        user.setAge(53);
-        user.setEmail("lucy@youtube.com");
+        user.setName("Colly");
+        user.setAge(75);
+        user.setEmail("Colly@youtube.com");
         int insert = userMapper.insert(user);
         System.out.println("insert result:" + insert);
     }
@@ -35,9 +35,11 @@ class OnlineCoursesApplicationTests {
     @Test
     void updateUser(){
         User user = new User();
-        user.setId(2L);
+        user.setId(1469339262032805889L); // the id of Colly
+        user.setAge(10);
         String name = user.getName();
-        System.out.println(user);
+        int row_num = userMapper.updateById(user);
+        System.out.println(row_num);
     }
 
 
