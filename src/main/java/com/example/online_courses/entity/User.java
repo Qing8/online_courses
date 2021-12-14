@@ -22,5 +22,6 @@ public class User {
     private Date updateTime;
 
     @Version
+    @TableField(fill = FieldFill.INSERT)
     private Integer version;
 }
