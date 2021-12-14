@@ -33,5 +33,5 @@ build/
 .vscode/
 
 
-/Users/qing/coding_interview/projects/online_courses/src/main/resources/application.properties
-/Users/qing/coding_interview/projects/online_courses/pom.xml
+src/main/resources/application.properties
+pom.xml
