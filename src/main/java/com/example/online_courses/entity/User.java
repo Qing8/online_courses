@@ -21,6 +21,9 @@ public class User {
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
 
+    @TableLogic
+    private Integer deleted;
+
     @Version
     @TableField(fill = FieldFill.INSERT)
     private Integer version;
